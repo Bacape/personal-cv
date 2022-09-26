@@ -5,18 +5,14 @@
     text-decoration: none;
     font-weight: 700;
     font-size: 3rem;
-    color: #dee2e6;
+    color: #fff8dc;
     transition: all 0.5s;
-  }
-  &::first-letter {
-    color: #e67e22;
   }
   &:hover,
   &:active {
-    color: #e67e22;
+    color: #0bceaf;
   }
 }
-
 .logo {
   height: 5.2rem;
 }

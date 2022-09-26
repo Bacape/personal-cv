@@ -1,14 +1,16 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1b1f2b;
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 2rem 4rem;
+  background-color: #212529;
   position: fixed;
+  padding: 3rem 4rem;
   top: 0;
   left: 0;
   right: 0;
   z-index: 55;
+}
+.header-mid {
+  max-width: 120rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
 }

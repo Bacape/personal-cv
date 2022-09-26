@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .nav-list--main {
   list-style: none;
   display: flex;
@@ -15,7 +16,7 @@
 .nav-link:visited {
   display: inline-block;
   text-decoration: none;
-  color: #eaeaea;
+  color: #fff8dc;
   font-weight: 500;
   font-size: 2rem;
   transition: all 0.3s;

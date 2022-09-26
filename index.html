@@ -10,39 +10,202 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
     <link rel="stylesheet" href="css/queries.css" />
     <title>Bačovský Petr</title>
   </head>
   <body>
     <header class="header">
-      <a class="logo-main" href="#hero">
-        <span class="logo">Petr Bačovský</span>
-      </a>
-      <nav class="navigation">
-        <ul class="nav-list--main">
-          <li><a class="nav-link" href="#o-nas">O Mně</a></li>
-          <li>
-            <a class="nav-link" href="#jak-to-probiha">Skills</a>
-          </li>
-          <li><a class="nav-link" href="#nase-sluzby">Zkušenosti</a></li>
-          <li><a class="nav-link" href="#nase-sluzby">Portfolio</a></li>
-          <li><a class="nav-link" href="#nase-sluzby">Kontakt</a></li>
-        </ul>
-      </nav>
+      <div class="header-mid">
+        <a class="logo-main" href="#hero">
+          <span class="logo">Petr Bačovský</span>
+        </a>
+        <nav class="navigation">
+          <ul class="nav-list--main">
+            <li><a class="nav-link" href="#o-nas">O Mně</a></li>
+            <li>
+              <a class="nav-link" href="#jak-to-probiha">Skills</a>
+            </li>
+            <li><a class="nav-link" href="#nase-sluzby">Zkušenosti</a></li>
+            <li><a class="nav-link" href="#nase-sluzby">Portfolio</a></li>
+            <li><a class="nav-link" href="#nase-sluzby">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section class="hero">
       <div class="hero-text">
         <div class="hero-hello">Já jsem</div>
         <h1 class="hero-title">Petr Bačovský</h1>
         <h3 class="heading-tertiary">Front-end developer</h3>
-        <p>
-          <a class="link-footer" href="tel:+420 722 047 140">+420 722 047 140</a
-          ><br />
-          <a class="link-footer" href="mailto:malovani@gmail.com"
-            >petrbacov@gmail.com</a
-          >
+        <ul class="hero-list">
+          <li class="hero-list-item">
+            <ion-icon class="hero-icon" name="call-outline"></ion-icon>
+            <p>
+              <a class="hero-link" href="tel:+420 722 047 140"
+                >+420 722 047 140</a
+              >
+            </p>
+          </li>
+          <li class="hero-list-item">
+            <ion-icon class="hero-icon" name="mail-outline"></ion-icon>
+            <p>
+              <a class="hero-link" href="mailto:petrbacov@gmail.com"
+                >petrbacov@gmail.com</a
+              >
+            </p>
+          </li>
+          <li class="hero-list-item">
+            <ion-icon class="hero-icon" name="location-outline"></ion-icon>
+            <p class="hero-address">Pod pramenem 1504/4 Praha 4 140 00</p>
+          </li>
+        </ul>
+      </div>
+      <div class="hero-img"></div>
+    </section>
+    <section class="section-about">
+      <img src="img/about-img.png" class="about-img" alt="handshake" />
+      <div class="about-text">
+        <h2 class="heading-secondary">O mně</h2>
+        <p class="about-description">
+          Má cesta front-end vývojáře začala již na střední škole, kde jsem
+          získal základní znalostí webového vývoje (HTML, CSS, Javascript) a
+          naučil se programování v jazyku C#. Při studii jsem ve volném čase
+          prohluboval znalosti webového vývoje a nedávno jsem se začal zajímat o
+          React. Považuji se za učenlivého, pečlivého a cílevědomého člověka s
+          ambicemi být dobrým front-end vývojářem, protože mě tento obor
+          naplňuje a baví.
         </p>
-        <p class="address">U Družstva Práce 799/52 Praha 4 - 140 00</p>
+      </div>
+    </section>
+    <sectio class="section-skills">
+      <div class="skills-box">
+        <h2 class="heading-secondary">Technický skill</h2>
+        <div class="skills">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">GitHub</span>
+          <span class="badge">Sass</span>
+        </div>
+      </div>
+      <div class="skills-box">
+        <h2 class="heading-secondary">Profesní skill</h2>
+        <div class="skills">
+          <span class="badge">Komunikace</span>
+          <span class="badge">Týmová práce</span>
+          <span class="badge">Spolehlivost</span>
+          <span class="badge">Kreativita</span>
+        </div>
+      </div>
+    </sectio>
+    <section class="section-experiences">
+      <div class="experiences-boxes">
+        <h2 class="heading-secondary">Vzdělání</h2>
+        <div class="experiences-box">
+          <h4 class="heading-fourth">Smíchovská střední průmyslová škola</h4>
+          <p class="experiences-year">2015-2019</p>
+          <p class="experiences-description">
+            Informační technologie, zakončeno maturitní zkouškou v roce 2019
+          </p>
+        </div>
+      </div>
+      <div class="experiences-boxes">
+        <h2 class="heading-secondary">Práce při studiu</h2>
+        <div class="experiences-box">
+          <h4 class="heading-fourth">
+            Malíř <span class="experiences-work"> Petr Bačovský</span>
+          </h4>
+          <p class="experiences-year">09/2019 - současnost</p>
+        </div>
+        <div class="experiences-box">
+          <h4 class="heading-fourth">
+            Bartender
+            <span class="experiences-work"> The Jackalope (London) </span>
+          </h4>
+          <p class="experiences-year">06/2019 - 09/2019</p>
+        </div>
+        <div class="experiences-box">
+          <h4 class="heading-fourth">
+            Kurýr <span class="experiences-work"> Dáme jídlo s.r.o.</span>
+          </h4>
+          <p class="experiences-year">9/2018 - 06/2019</p>
+        </div>
+        <div class="experiences-box">
+          <h4 class="heading-fourth">
+            Skladník
+            <span class="experiences-work">JANČA & EMAS goup s.r.o.</span>
+          </h4>
+          <p class="experiences-year">04/2016 - 03/2017</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-contact">
+      <h2 class="heading-secondary heading-secondary_mid">Kontaktujte mně</h2>
+      <div class="contact-icons">
+        <div class="contact-box">
+          <ion-icon class="contact-icon" name="location-outline"></ion-icon>
+          <p class="contact-tittle">Adresa</p>
+          <p class="contact-description">Pod pramenem 1504/4 Praha 4 140 00</p>
+        </div>
+        <div class="contact-box">
+          <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
+          <p class="contact-tittle">Email</p>
+          <p>
+            <a class="contact-link" href="mailto:petrbacov@gmail.com"
+              >petrbacov@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-box">
+          <ion-icon class="contact-icon" name="call-outline"></ion-icon>
+          <p class="contact-tittle">Telefon</p>
+          <p>
+            <a class="contact-link" href="tel:+420 722 047 140"
+              >+420 722 047 140</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="contact-list">
+        <form class="contact-form" action="#">
+          <div>
+            <input id="first-name" type="text" placeholder="Jméno" required />
+          </div>
+          <form class="contact-form" action="#">
+            <div>
+              <input id="last-name" type="text" placeholder="Přijmení" required />
+            </div>
+          <div> 
+            <input
+              id="email"
+              type="email"
+              placeholder="Váš email"
+              required
+            />
+          </div>
+          <div class="contact-message">
+            <textarea
+              name="contact-text"
+              id="contact-text"
+              cols="30"
+              rows="5"
+              placeholder="Vaše zpráva"
+              required
+            ></textarea>
+          </div>
+            <a href="#" class="contact-button">Odeslat zprávu</a>
+        </form>
+        <p class="copyright">
+          Copyright &copy; 2027 by Petr Bačovský
+        </p>
       </div>
     </section>
   </body>
