@@ -1,0 +1,23 @@
+.navigation {
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-list--main {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: #eaeaea;
+  font-weight: 500;
+  font-size: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
