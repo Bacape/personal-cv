@@ -1,0 +1,26 @@
+.contact-form {
+  & {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    row-gap: 2.4rem;
+  }
+  & input,
+  & textarea,
+  & select {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: $color-white;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 0.9rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border: 0.2rem solid $color-white;
+  }
+  & input::placeholder,
+  & textarea::placeholder {
+    color: $color-white;
+  }
+}

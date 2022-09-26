@@ -1,1 +1,20 @@
-{"version":3,"sourceRoot":"","sources":["components/logo.scss","components/header.scss","components/navigation.scss","style.scss","variables.scss"],"names":[],"mappings":"AACE;EAEE;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;;AAEF;EAEE;;;AAIJ;EACE;;;ACpBF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;ACZF;EACE;EACA;EACA;EACA;;;AAEF;EACE;EACA;EACA;EACA;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;;;AChBF;EACE;EACA;EACA;;;AAGF;EACE;EACA;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA,kBCrBW;;;ADwBb;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA","file":"style.css"}
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "components/logo.scss",
+    "components/header.scss",
+    "components/navigation.scss",
+    "components/badge.scss",
+    "components/form.scss",
+    "components/icons.scss",
+    "components/image.scss",
+    "components/links.scss",
+    "components/tittles.scss",
+    "style.scss",
+    "variables.scss"
+  ],
+  "names": [],
+  "mappings": "AACE;EAEE;EACA;EACA;EACA;EACA;EACA;;AAEF;EACE;;AAEF;EAEE;;;AAIJ;EACE;;;ACpBF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;ACZF;EACE;EACA;EACA;EACA;;;AAEF;EACE;EACA;EACA;EACA;;;AAGF;AAAA;EAEE;EACA;EACA;EACA;EACA;EACA;EACA;;;AChBF;EACE;EACA;EACA;;;AAGF;EACE;EACA;;;AAEF;EACE;EACA;EACA;EACA;EACA;EACA,kBCrBW;;;ADwBb;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;;;AAGF;EACE;EACA;EACA;EACA;EACA",
+  "file": "style.css"
+}

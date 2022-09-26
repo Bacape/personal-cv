@@ -251,7 +251,7 @@ p {
 .heading-secondary_mid {
   text-align: center;
 }
-.contact-icons {
+.contact-boxes {
   max-width: 120rem;
   margin: 0 auto;
   display: flex;
@@ -294,7 +294,6 @@ p {
   display: grid;
   grid-template-columns: 1fr;
   border-radius: 1.2rem;
-
   margin-top: 6rem;
 }
 .contact-form {

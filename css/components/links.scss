@@ -1,0 +1,34 @@
+.contact-link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: $color-white;
+    transition: all 0.3s;
+  }
+  &:active,
+  &:hover {
+    color: $color-mint;
+  }
+}
+.hero-link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: $color-white;
+    transition: all 0.3s;
+  }
+}
+.contact-button:link,
+.contact-button:visited {
+  grid-column: 1 / 3;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: $color-mint;
+  padding: 1.6rem;
+  border-radius: 2rem;
+  color: $color-white;
+}
