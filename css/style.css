@@ -1,5 +1,4 @@
-.logo-main:link,
-.logo-main:visited {
+.logo-main:link, .logo-main:visited {
   display: block;
   text-decoration: none;
   font-weight: 700;
@@ -7,8 +6,7 @@
   color: #fff8dc;
   transition: all 0.5s;
 }
-.logo-main:hover,
-.logo-main:active {
+.logo-main:hover, .logo-main:active {
   color: #0bceaf;
 }
 
@@ -48,8 +46,7 @@
   gap: 4.8rem;
 }
 
-.nav-link:link,
-.nav-link:visited {
+.nav-link:link, .nav-link:visited {
   display: inline-block;
   text-decoration: none;
   color: #fff8dc;
@@ -58,8 +55,7 @@
   transition: all 0.3s;
   cursor: pointer;
 }
-.nav-link:hover,
-.nav-link:active {
+.nav-link:hover, .nav-link:active {
   color: #0bceaf;
 }
 
@@ -88,13 +84,6 @@
   left: -2.5rem;
   right: -2.5rem;
   bottom: -2.5rem;
-  animation: spin 7s linear infinite;
-}
-
-@keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .about-img {
@@ -119,9 +108,7 @@
   max-width: 50rem;
   text-align: center;
 }
-.contact-form input,
-.contact-form textarea,
-.contact-form select {
+.contact-form input, .contact-form textarea, .contact-form select {
   width: 100%;
   padding: 1.2rem;
   font-size: 1.8rem;
@@ -134,8 +121,7 @@
   border: 0.2rem solid #fff8dc;
   margin-top: 3rem;
 }
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
+.contact-form input::placeholder, .contact-form textarea::placeholder {
   color: #fff8dc;
 }
 
@@ -154,20 +140,17 @@
   border: 0.3rem solid #0bceaf;
 }
 
-.contact-link:link,
-.contact-link:visited {
+.contact-link:link, .contact-link:visited {
   text-decoration: none;
   font-size: 1.8rem;
   color: #fff8dc;
   transition: all 0.3s;
 }
-.contact-link:active,
-.contact-link:hover {
+.contact-link:active, .contact-link:hover {
   color: #0bceaf;
 }
 
-.hero-link:link,
-.hero-link:visited {
+.hero-link:link, .hero-link:visited {
   text-decoration: none;
   font-size: 1.8rem;
   color: #fff8dc;
@@ -232,10 +215,10 @@
 
 .copyright {
   max-width: 120rem;
-  margin: 8rem auto 0 auto;
+  margin: 0 auto;
   font-size: 1.6rem;
   color: #fff8dc;
-  text-align: center;
+  margin: 8rem auto 0 auto;
 }
 
 * {
@@ -317,6 +300,10 @@ p {
   width: 45%;
 }
 
+.about-text {
+  width: 45%;
+}
+
 .section-skills {
   padding-top: 9.6rem;
   max-width: 120rem;
@@ -326,7 +313,7 @@ p {
 }
 
 .skills-box {
-  width: 50%;
+  width: 45%;
 }
 
 .skills {
