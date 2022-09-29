@@ -1,8 +1,14 @@
-.hero-title {
-  font-size: 6rem;
-  font-weight: 600;
-  line-height: 6rem;
-  margin-top: 1rem;
+.hero-hello {
+  background-color: $color-mint;
+  display: inline-block;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 }
 .hero-address {
   font-size: 1.8rem;
@@ -29,7 +35,9 @@
   margin-top: 4rem;
 }
 .copyright {
+  max-width: 120rem;
+  margin: 0 auto;
   font-size: 1.6rem;
   color: $color-white;
-  margin-top: 8rem;
+  margin: 8rem auto 0 auto;
 }

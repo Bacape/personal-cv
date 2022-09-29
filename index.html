@@ -29,21 +29,20 @@
         </a>
         <nav class="navigation">
           <ul class="nav-list--main">
-            <li><a class="nav-link" href="#o-nas">O Mně</a></li>
+            <li><a class="nav-link" href="#o-mne">O Mně</a></li>
             <li>
-              <a class="nav-link" href="#jak-to-probiha">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
-            <li><a class="nav-link" href="#nase-sluzby">Zkušenosti</a></li>
-            <li><a class="nav-link" href="#nase-sluzby">Portfolio</a></li>
-            <li><a class="nav-link" href="#nase-sluzby">Kontakt</a></li>
+            <li><a class="nav-link" href="#zkusenosti">Zkušenosti</a></li>
+            <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <section class="hero">
+    <section class="hero" id="hero">
       <div class="hero-text">
         <div class="hero-hello">Já jsem</div>
-        <h1 class="hero-title">Petr Bačovský</h1>
+        <h1 class="hero-tittle">Petr Bačovský</h1>
         <h3 class="heading-tertiary">Front-end developer</h3>
         <ul class="hero-list">
           <li class="hero-list-item">
@@ -68,9 +67,9 @@
           </li>
         </ul>
       </div>
-      <div class="hero-img"></div>
+      <div class="hero-circle"><div class="hero-img"></div></div>
     </section>
-    <section class="section-about">
+    <section class="scroll-spy section-about" id="o-mne">
       <img src="img/about-img.png" class="about-img" alt="handshake" />
       <div class="about-text">
         <h2 class="heading-secondary">O mně</h2>
@@ -85,7 +84,7 @@
         </p>
       </div>
     </section>
-    <sectio class="section-skills">
+    <sectio class="scroll-spy section-skills" id="skills">
       <div class="skills-box">
         <h2 class="heading-secondary">Technický skill</h2>
         <div class="skills">
@@ -106,7 +105,7 @@
         </div>
       </div>
     </sectio>
-    <section class="section-experiences">
+    <section class="scroll-spy section-experiences" id="zkusenosti">
       <div class="experiences-boxes">
         <h2 class="heading-secondary">Vzdělání</h2>
         <div class="experiences-box">
@@ -117,7 +116,7 @@
           </p>
         </div>
       </div>
-      <div class="experiences-boxes">
+      <div class="scroll-spy experiences-boxes">
         <h2 class="heading-secondary">Práce při studiu</h2>
         <div class="experiences-box">
           <h4 class="heading-fourth">
@@ -147,13 +146,13 @@
         </div>
       </div>
     </section>
-    <section class="section-contact">
+    <section class="scroll-spy section-contact" id="kontakt">
       <h2 class="heading-secondary heading-secondary_mid">Kontaktujte mně</h2>
       <div class="contact-boxes">
         <div class="contact-box">
           <ion-icon class="contact-icon" name="location-outline"></ion-icon>
           <p class="contact-tittle">Adresa</p>
-          <p class="contact-description">Pod pramenem 1504/4 Praha 4 140 00</p>
+          <p class="contact-description"><span>Pod pramenem 1504/4</span> Praha 4 - Nusele</p>
         </div>
         <div class="contact-box">
           <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
@@ -176,22 +175,15 @@
       </div>
       <div class="contact-list">
         <form class="contact-form" action="#">
-          <div>
             <input id="first-name" type="text" placeholder="Jméno" required />
-          </div>
-          <form class="contact-form" action="#">
-            <div>
-              <input id="last-name" type="text" placeholder="Přijmení" required />
-            </div>
-          <div> 
+          <form class="contact-form" action="#">              
+            <input id="last-name" type="text" placeholder="Přijmení" required />
             <input
               id="email"
               type="email"
               placeholder="Váš email"
               required
             />
-          </div>
-          <div class="contact-message">
             <textarea
               name="contact-text"
               id="contact-text"
@@ -200,13 +192,15 @@
               placeholder="Vaše zpráva"
               required
             ></textarea>
-          </div>
+          
             <a href="#" class="contact-button">Odeslat zprávu</a>
-        </form>
+          
+          </form>
+        </div>
         <p class="copyright">
           Copyright &copy; 2027 by Petr Bačovský
         </p>
-      </div>
     </section>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -11,14 +11,19 @@
   align-items: center;
   gap: 4.8rem;
 }
-
-.nav-link:link,
-.nav-link:visited {
-  display: inline-block;
-  text-decoration: none;
-  color: $color-white;
-  font-weight: 500;
-  font-size: 2rem;
-  transition: all 0.3s;
-  cursor: pointer;
+.nav-link {
+  &:link,
+  &:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: $color-white;
+    font-weight: 500;
+    font-size: 2rem;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  &:hover,
+  &:active {
+    color: #0bceaf;
+  }
 }

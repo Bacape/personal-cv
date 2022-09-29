@@ -22,13 +22,13 @@
 }
 .contact-button:link,
 .contact-button:visited {
-  grid-column: 1 / 3;
+  display: inline-block;
   text-decoration: none;
-  text-align: center;
   font-size: 2.2rem;
   font-weight: 500;
   background-color: $color-mint;
   padding: 1.6rem;
   border-radius: 2rem;
   color: $color-white;
+  margin-top: 3rem;
 }

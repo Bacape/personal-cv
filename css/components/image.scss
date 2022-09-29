@@ -1,23 +1,28 @@
-.hero-img {
-  background-image: url("../img/foto_of_me.jpg");
-  width: 35rem;
-  height: 35rem;
+.hero-circle {
   position: relative;
-  background-size: cover;
-  border-radius: 50%;
-}
-.hero-img:before {
-  content: "";
-  width: 40rem;
-  height: 40rem;
   border-radius: 50%;
   border: 2.5rem solid rgba(29, 29, 29, 0.637);
-  border-bottom: 1rem solid $color-mint;
+}
+
+.hero-img {
+  background-image: url("../img/foto_of_me.jpg");
+  background-size: cover;
+  width: 35rem;
+  height: 35rem;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+.hero-img:before {
+  content: "";
+  border-radius: 50%;
+  border: 2.5rem solid transparent;
+  border-bottom: 2.5rem solid #0bceaf;
   position: absolute;
-  z-index: 0;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: -2.5rem;
+  left: -2.5rem;
+  right: -2.5rem;
+  bottom: -2.5rem;
 }
 .about-img {
   width: 45%;
