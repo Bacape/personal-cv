@@ -55,7 +55,7 @@
   transition: all 0.3s;
   cursor: pointer;
 }
-.nav-link:hover, .nav-link:active {
+.nav-link:hover, .nav-link:active .nav-link.active {
   color: #0bceaf;
 }
 
@@ -84,8 +84,14 @@
   left: -2.5rem;
   right: -2.5rem;
   bottom: -2.5rem;
+  animation: spin 8s linear infinite;
 }
 
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .about-img {
   width: 45%;
 }
@@ -255,7 +261,7 @@ p {
   justify-content: space-between;
 }
 
-.hero-tittle {
+#hero-tittle {
   font-size: 6rem;
   font-weight: 600;
   line-height: 6rem;

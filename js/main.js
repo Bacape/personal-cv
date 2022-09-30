@@ -42,3 +42,16 @@ window.onscroll = () => {
     navLinks.forEach((v) => v.classList.remove("active"));
   }
 };
+
+var i = 0,
+  text;
+text = "Bačovský Petr";
+
+function typing() {
+  if (i < text.length) {
+    document.getElementById("hero-tittle").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 250);
+  }
+}
+typing();
