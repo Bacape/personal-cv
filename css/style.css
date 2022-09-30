@@ -54,7 +54,7 @@
   transition: all 0.3s;
   cursor: pointer;
 }
-.nav-link:hover, .nav-link:active .nav-link.active {
+.nav-link:hover, .nav-link:active, .nav-link.active {
   color: #0bceaf;
 }
 
@@ -86,15 +86,15 @@
   animation: spin 8s linear infinite;
 }
 
+.about-img {
+  width: 45%;
+}
+
 @keyframes spin {
   100% {
     transform: rotate(360deg);
   }
 }
-.about-img {
-  width: 45%;
-}
-
 .badge {
   display: inline-block;
   padding: 1.6rem 1.6rem;
@@ -367,6 +367,14 @@ p {
   padding: 5rem;
   width: 30%;
   background-color: #212529;
+  transform: translateY(20rem);
+  opacity: 0;
+  transition: 800ms;
+}
+
+.contact-box.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .contact-tittle {

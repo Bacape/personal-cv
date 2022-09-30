@@ -3,6 +3,7 @@
 @import "./components/header.scss";
 @import "./components/navigation.scss";
 @import "./components/image.scss";
+@import "./components/animations.scss";
 @import "./components/badge.scss";
 @import "./components/form.scss";
 @import "./components/icons.scss";
@@ -128,6 +129,13 @@ p {
   padding: 5rem;
   width: 30%;
   background-color: $color-side;
+  transform: translateY(20rem);
+  opacity: 0;
+  transition: 800ms;
+}
+.contact-box.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 .contact-tittle {
   font-size: 2.6rem;

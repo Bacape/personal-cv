@@ -23,7 +23,8 @@
     cursor: pointer;
   }
   &:hover,
-  &:active &.active {
+  &:active,
+  &.active {
     color: #0bceaf;
   }
 }
