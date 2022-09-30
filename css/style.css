@@ -1,3 +1,6 @@
+.logo {
+  height: 5.2rem;
+}
 .logo-main:link, .logo-main:visited {
   display: block;
   text-decoration: none;
@@ -8,10 +11,6 @@
 }
 .logo-main:hover, .logo-main:active {
   color: #0bceaf;
-}
-
-.logo {
-  height: 5.2rem;
 }
 
 .header {
@@ -220,11 +219,10 @@
 }
 
 .copyright {
-  max-width: 120rem;
-  margin: 0 auto;
+  text-align: center;
   font-size: 1.6rem;
   color: #fff8dc;
-  margin: 8rem auto 0 auto;
+  margin: 8rem auto 6rem auto;
 }
 
 * {
@@ -253,10 +251,13 @@ p {
   color: #fff8dc;
 }
 
-.hero {
-  padding-top: 15rem;
+.container {
   max-width: 120rem;
   margin: 0 auto;
+}
+
+.hero {
+  padding: 15rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -295,9 +296,7 @@ p {
 }
 
 .section-about {
-  padding-top: 9.6rem;
-  max-width: 120rem;
-  margin: 0 auto;
+  padding: 9.6rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -311,9 +310,7 @@ p {
 }
 
 .section-skills {
-  padding-top: 9.6rem;
-  max-width: 120rem;
-  margin: 0 auto;
+  padding: 9.6rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -331,9 +328,7 @@ p {
 }
 
 .section-experiences {
-  padding: 9.6rem 0 6.2rem 0;
-  max-width: 120rem;
-  margin: 0 auto;
+  padding: 9.6rem 4rem 6.2rem 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -350,7 +345,7 @@ p {
 }
 
 .section-contact {
-  padding-top: 9.6rem;
+  padding: 9.6rem 4rem 0 4rem;
   background-image: url("../img/map-img.png");
   background-size: cover;
   background-position: center;
@@ -362,8 +357,6 @@ p {
 }
 
 .contact-boxes {
-  max-width: 120rem;
-  margin: 0 auto;
   display: flex;
   gap: 10rem;
   text-align: center;

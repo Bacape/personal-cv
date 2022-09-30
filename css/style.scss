@@ -32,10 +32,12 @@ p {
   line-height: 1.6;
   color: $color-white;
 }
-.hero {
-  padding-top: 15rem;
+.container {
   max-width: 120rem;
   margin: 0 auto;
+}
+.hero {
+  padding: 15rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -67,9 +69,7 @@ p {
   gap: 1.6rem;
 }
 .section-about {
-  padding-top: 9.6rem;
-  max-width: 120rem;
-  margin: 0 auto;
+  padding: 9.6rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -80,9 +80,7 @@ p {
   width: 45%;
 }
 .section-skills {
-  padding-top: 9.6rem;
-  max-width: 120rem;
-  margin: 0 auto;
+  padding: 9.6rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -97,9 +95,7 @@ p {
   gap: 2rem;
 }
 .section-experiences {
-  padding: 9.6rem 0 6.2rem 0;
-  max-width: 120rem;
-  margin: 0 auto;
+  padding: 9.6rem 4rem 6.2rem 4rem;
   display: flex;
   justify-content: space-between;
 }
@@ -113,7 +109,7 @@ p {
   box-shadow: -1rem 0 3rem #000;
 }
 .section-contact {
-  padding-top: 9.6rem;
+  padding: 9.6rem 4rem 0 4rem;
   background-image: url("../img/map-img.png");
   background-size: cover;
   background-position: center;
@@ -123,8 +119,6 @@ p {
   text-align: center;
 }
 .contact-boxes {
-  max-width: 120rem;
-  margin: 0 auto;
   display: flex;
   gap: 10rem;
   text-align: center;

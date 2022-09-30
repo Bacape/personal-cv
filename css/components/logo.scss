@@ -1,18 +1,19 @@
-.logo-main {
-  &:link,
-  &:visited {
-    display: block;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 3rem;
-    color: $color-white;
-    transition: all 0.5s;
-  }
-  &:hover,
-  &:active {
-    color: $color-mint;
-  }
-}
 .logo {
   height: 5.2rem;
+
+  &-main {
+    &:link,
+    &:visited {
+      display: block;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 3rem;
+      color: $color-white;
+      transition: all 0.5s;
+    }
+    &:hover,
+    &:active {
+      color: $color-mint;
+    }
+  }
 }
