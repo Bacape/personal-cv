@@ -1,14 +1,4 @@
 @import "./variables.scss";
-@import "./components/logo.scss";
-@import "./components/header.scss";
-@import "./components/navigation.scss";
-@import "./components/image.scss";
-@import "./components/animations.scss";
-@import "./components/badge.scss";
-@import "./components/form.scss";
-@import "./components/icons.scss";
-@import "./components/links.scss";
-@import "./components/tittles.scss";
 * {
   padding: 0;
   margin: 0;
@@ -33,6 +23,17 @@ p {
   line-height: 1.6;
   color: $color-white;
 }
+@import "./components/logo.scss";
+@import "./components/mobile.scss";
+@import "./components/header.scss";
+@import "./components/navigation.scss";
+@import "./components/image.scss";
+@import "./components/animations.scss";
+@import "./components/badge.scss";
+@import "./components/form.scss";
+@import "./components/icons.scss";
+@import "./components/links.scss";
+@import "./components/tittles.scss";
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -73,9 +74,6 @@ p {
   padding: 9.6rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
-}
-.about-img {
-  width: 45%;
 }
 .about-text {
   width: 45%;
@@ -142,11 +140,11 @@ p {
   margin-top: 4rem;
 }
 .contact-list {
-  max-width: 120rem;
-  margin: 0 auto;
   padding: 4.8rem 6.4rem 2.4rem 6.4rem;
   display: flex;
   justify-content: center;
   border-radius: 1.2rem;
   margin-top: 6rem;
 }
+
+@import "./queries.scss";

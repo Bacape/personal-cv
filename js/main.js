@@ -2,6 +2,11 @@ const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll(".scroll-spy");
 const hero = document.querySelector(".hero");
 const header = document.querySelector(".header");
+const buttonmobile = document.querySelector(".nav-button-mobile");
+
+buttonmobile.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
+});
 
 function scrollTo(element) {
   window.scroll({
@@ -65,7 +70,7 @@ const observer = new IntersectionObserver(
     });
   },
   {
-    threshold: 0.5,
+    threshold: 0.25,
   }
 );
 cards.forEach((card) => {
