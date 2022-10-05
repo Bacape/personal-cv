@@ -6,6 +6,9 @@
   left: 0;
   right: 0;
   z-index: 55;
+  @include for-tablet-portrait {
+    padding: 2rem 2.5rem;
+  }
 }
 .header-mid {
   max-width: 120rem;
@@ -13,4 +16,10 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  @include for-tablet-landscape {
+    height: 5.1rem;
+  }
+  @include for-phone {
+    height: 3rem;
+  }
 }

@@ -15,5 +15,17 @@
     &:active {
       color: $color-mint;
     }
+    @include for-tablet-portrait {
+      font-size: 2.6rem;
+    }
+    @include for-phone {
+      font-size: 2rem;
+    }
+  }
+  @include for-tablet-portrait {
+    height: 3rem;
+  }
+  @include for-phone {
+    height: 2rem;
   }
 }

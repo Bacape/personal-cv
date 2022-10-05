@@ -2,6 +2,10 @@
   width: 2rem;
   height: 2rem;
   color: $color-mint;
+  @include for-phone {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
 }
 .contact-icon {
   width: 4rem;
@@ -10,4 +14,9 @@
   color: $color-white;
   border-radius: 50%;
   border: 0.3rem solid $color-mint;
+  @include for-desktop {
+    width: 3rem;
+    height: 3rem;
+    padding: 3rem;
+  }
 }

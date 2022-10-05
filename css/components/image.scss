@@ -2,6 +2,15 @@
   position: relative;
   border-radius: 50%;
   border: 2.5rem solid rgba(29, 29, 29, 0.637);
+  @include for-tablet-portrait {
+    text-align: center;
+    width: 34rem;
+    height: 34rem;
+  }
+  @include for-phone {
+    width: 29rem;
+    height: 29rem;
+  }
 }
 
 .hero-img {
@@ -11,6 +20,18 @@
   height: 35rem;
   border-radius: 50%;
   margin: 2rem;
+  @include for-desktop {
+    width: 30rem;
+    height: 30rem;
+  }
+  @include for-tablet-landscape {
+    width: 25rem;
+    height: 25rem;
+  }
+  @include for-phone {
+    width: 20rem;
+    height: 20rem;
+  }
 }
 
 .hero-img:before {
@@ -27,4 +48,10 @@
 }
 .about-img {
   width: 45%;
+  @include for-tablet-portrait {
+    width: 60%;
+  }
+  @include for-phone {
+    width: 100%;
+  }
 }

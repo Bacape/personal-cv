@@ -1,17 +1,21 @@
-.badge{
-
-
-& {
-  display: inline-block;
-  padding: 1.6rem 1.6rem;
-  font-weight: 500;
-  font-size: 2rem;
-  color: $color-white;
-  border-radius: 2rem;
-  border: 0.5rem solid $color-mint;
-}
-&:hover {
-  background-color: #0bceaf;
-  color: #ffff;
-}
+.badge {
+  & {
+    display: inline-block;
+    padding: 1.6rem 1.6rem;
+    font-weight: 500;
+    font-size: 2rem;
+    color: $color-white;
+    border-radius: 2rem;
+    border: 0.5rem solid $color-mint;
+  }
+  &:hover {
+    background-color: #0bceaf;
+    color: #ffff;
+  }
+  @include for-desktop {
+    font-size: 1.6rem;
+  }
+  @include for-tablet-landscape {
+    border: 0.3rem solid #0bceaf;
+  }
 }

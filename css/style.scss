@@ -23,47 +23,92 @@ p {
   line-height: 1.6;
   color: $color-white;
 }
+@import "./queries.scss";
 @import "./components/logo.scss";
-@import "./components/mobile.scss";
 @import "./components/header.scss";
 @import "./components/navigation.scss";
+@import "./components/mobile.scss";
 @import "./components/image.scss";
 @import "./components/animations.scss";
 @import "./components/badge.scss";
 @import "./components/form.scss";
 @import "./components/icons.scss";
 @import "./components/links.scss";
-@import "./components/tittles.scss";
+@import "./components/titles.scss";
 .container {
   max-width: 120rem;
   margin: 0 auto;
+  padding: 0 4rem;
 }
 .hero {
   padding: 15rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
+  @include for-tablet-portrait {
+    flex-direction: column-reverse;
+    gap: 5rem;
+    align-items: center;
+    text-align: center;
+  }
+  @include for-phone {
+    padding: 9rem 4rem 0 4rem;
+  }
 }
-#hero-tittle {
+#hero-title {
   font-size: 6rem;
   font-weight: 600;
   line-height: 6rem;
   margin-top: 1rem;
+  @include for-desktop {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  @include for-tablet-portrait {
+    font-size: 4rem;
+  }
+  @include for-phone {
+    font-size: 3.4rem;
+  }
+}
+.hero-text {
+  @include for-tablet-portrait {
+    width: 70%;
+  }
+  @include for-phone {
+    width: 100%;
+  }
 }
 .heading-secondary {
   font-size: 4rem;
+  @include for-desktop {
+    font-size: 3rem;
+  }
 }
 .heading-tertiary {
   font-size: 2.6rem;
   line-height: 3.4rem;
   margin-top: 2rem;
+  @include for-desktop {
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+  @include for-tablet-portrait {
+    font-size: 2rem;
+  }
 }
 .heading-fourth {
   font-size: 2.2rem;
   line-height: 3rem;
   font-weight: 600;
+  @include for-desktop {
+    font-size: 2rem;
+  }
 }
 .hero-list {
   margin-top: 6rem;
+  @include for-tablet-portrait {
+    margin-top: 2rem;
+  }
 }
 .hero-list-item {
   display: flex;
@@ -74,14 +119,32 @@ p {
   padding: 9.6rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
+  @include for-tablet-portrait {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
 }
 .about-text {
   width: 45%;
+  @include for-tablet-portrait {
+    width: 60%;
+  }
+  @include for-phone {
+    width: 100%;
+  }
 }
 .section-skills {
   padding: 9.6rem 4rem 0 4rem;
   display: flex;
   justify-content: space-between;
+  @include for-tablet-portrait {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
 }
 .skills-box {
   width: 45%;
@@ -92,20 +155,54 @@ p {
   flex-wrap: wrap;
   width: 70%;
   gap: 2rem;
+  @include for-tablet-portrait {
+    width: 100%;
+    justify-content: center;
+  }
+  @include for-phone {
+    width: 100%;
+  }
 }
 .section-experiences {
   padding: 9.6rem 4rem 6.2rem 4rem;
   display: flex;
   justify-content: space-between;
+  @include for-tablet-portrait {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
 }
 .experiences-boxes {
   width: 45%;
+  @include for-tablet-portrait {
+    width: 80%;
+  }
+  @include for-phone {
+    width: 100%;
+  }
+}
+.experiences-boxes:last-child {
+  @include for-tablet-portrait {
+    margin-top: 5rem;
+  }
 }
 .experiences-box {
   padding: 4rem;
   margin-top: 6rem;
   background-color: $color-side;
   box-shadow: -1rem 0 3rem #000;
+  transform: translateY(20rem);
+  opacity: 0;
+  transition: 500ms;
+  @include for-tablet-landscape {
+    margin-top: 3rem;
+  }
+}
+.experiences-box.show {
+  transform: translateY(0);
+  opacity: 1;
 }
 .section-contact {
   padding: 9.6rem 4rem 0 4rem;
@@ -113,6 +210,9 @@ p {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  @include for-phone {
+    background-attachment: unset;
+  }
 }
 .heading-secondary_mid {
   text-align: center;
@@ -122,6 +222,11 @@ p {
   gap: 10rem;
   text-align: center;
   margin-top: 6rem;
+  @include for-desktop {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4rem;
+  }
 }
 .contact-box {
   padding: 5rem;
@@ -130,12 +235,22 @@ p {
   transform: translateY(20rem);
   opacity: 0;
   transition: 800ms;
+  @include for-desktop {
+    width: 45%;
+    padding: 4rem;
+  }
+  @include for-tablet-portrait {
+    width: 80%;
+  }
+  @include for-phone {
+    width: 100%;
+  }
 }
 .contact-box.show {
   transform: translateY(0);
   opacity: 1;
 }
-.contact-tittle {
+.contact-title {
   font-size: 2.6rem;
   margin-top: 4rem;
 }
@@ -145,6 +260,7 @@ p {
   justify-content: center;
   border-radius: 1.2rem;
   margin-top: 6rem;
+  @include for-phone {
+    padding: 4rem 2rem 2.4rem 2rem;
+  }
 }
-
-@import "./queries.scss";

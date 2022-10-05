@@ -1,13 +1,20 @@
 .nav-button-mobile {
   border: none;
   background: none;
-  cursor: pointer;
   display: none;
+  @include for-tablet-landscape {
+    display: block;
+  }
 }
+
 .nav-mobile-icon {
   height: 4.8rem;
   width: 4.8rem;
   color: $color-mint;
+  @include for-phone {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
 }
 .nav-mobile-icon[name="close-outline"] {
   display: none;

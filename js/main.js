@@ -3,9 +3,19 @@ const sections = document.querySelectorAll(".scroll-spy");
 const hero = document.querySelector(".hero");
 const header = document.querySelector(".header");
 const buttonmobile = document.querySelector(".nav-button-mobile");
+const allLinks = document.querySelectorAll("a:link");
 
 buttonmobile.addEventListener("click", function () {
   header.classList.toggle("nav-open");
+});
+
+allLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const href = link.getAttribute("href");
+    if (link.classList.contains("nav-link"))
+      header.classList.toggle("nav-open");
+  });
 });
 
 function scrollTo(element) {
@@ -54,7 +64,7 @@ text = "Bačovský Petr";
 
 function typing() {
   if (i < text.length) {
-    document.getElementById("hero-tittle").innerHTML += text.charAt(i);
+    document.getElementById("hero-title").innerHTML += text.charAt(i);
     i++;
     setTimeout(typing, 250);
   }
@@ -62,6 +72,7 @@ function typing() {
 typing();
 
 const cards = document.querySelectorAll(".contact-box");
+const boxes = document.querySelectorAll(".experiences-box");
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
@@ -73,6 +84,9 @@ const observer = new IntersectionObserver(
     threshold: 0.25,
   }
 );
+boxes.forEach((box) => {
+  observer.observe(box);
+});
 cards.forEach((card) => {
   observer.observe(card);
 });

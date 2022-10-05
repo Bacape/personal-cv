@@ -1,3 +1,19 @@
+.hero-link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: $color-white;
+    transition: all 0.3s;
+    margin-top: 1rem;
+  }
+  @include for-desktop {
+    font-size: 1.6rem;
+  }
+  @include for-phone {
+    font-size: 1.4rem;
+  }
+}
 .contact-link {
   &:link,
   &:visited {
@@ -10,15 +26,11 @@
   &:hover {
     color: $color-mint;
   }
-}
-.hero-link {
-  &:link,
-  &:visited {
-    text-decoration: none;
+  @include for-desktop {
     font-size: 1.8rem;
-    color: $color-white;
-    transition: all 0.3s;
-    margin-top: 1rem;
+  }
+  @include for-phone {
+    font-size: 1.6rem;
   }
 }
 .contact-button:link,
@@ -32,4 +44,8 @@
   border-radius: 2rem;
   color: $color-white;
   margin-top: 3rem;
+  @include for-desktop {
+    font-size: 2rem;
+    padding: 1.4rem;
+  }
 }
