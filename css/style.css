@@ -366,6 +366,12 @@ p {
     padding: 3rem;
   }
 }
+@media (max-width: 575.99px) {
+  .contact-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+}
 
 .hero-link:link, .hero-link:visited {
   text-decoration: none;
@@ -375,12 +381,12 @@ p {
   margin-top: 1rem;
 }
 @media (max-width: 1199.99px) {
-  .hero-link {
+  .hero-link:link, .hero-link:visited {
     font-size: 1.6rem;
   }
 }
 @media (max-width: 575.99px) {
-  .hero-link {
+  .hero-link:link, .hero-link:visited {
     font-size: 1.4rem;
   }
 }
@@ -391,18 +397,18 @@ p {
   color: #fff8dc;
   transition: all 0.3s;
 }
-.contact-link:active, .contact-link:hover {
-  color: #0bceaf;
-}
 @media (max-width: 1199.99px) {
-  .contact-link {
+  .contact-link:link, .contact-link:visited {
     font-size: 1.8rem;
   }
 }
 @media (max-width: 575.99px) {
-  .contact-link {
+  .contact-link:link, .contact-link:visited {
     font-size: 1.6rem;
   }
+}
+.contact-link:active, .contact-link:hover {
+  color: #0bceaf;
 }
 
 .contact-button:link,
@@ -658,7 +664,8 @@ p {
 }
 @media (max-width: 767.99px) {
   .hero-list {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    display: inline-block;
   }
 }
 
@@ -712,6 +719,16 @@ p {
 
 .skills-box {
   width: 45%;
+}
+@media (max-width: 767.99px) {
+  .skills-box {
+    width: 80%;
+  }
+}
+@media (max-width: 575.99px) {
+  .skills-box {
+    width: 100%;
+  }
 }
 
 .skills {
@@ -797,6 +814,7 @@ p {
 @media (max-width: 575.99px) {
   .section-contact {
     background-attachment: unset;
+    padding: 9.6rem 0 0 0;
   }
 }
 
@@ -846,11 +864,6 @@ p {
 .contact-box.show {
   transform: translateY(0);
   opacity: 1;
-}
-
-.contact-title {
-  font-size: 2.6rem;
-  margin-top: 4rem;
 }
 
 .contact-list {
