@@ -35,18 +35,18 @@ p {
   color: #fff8dc;
   transition: all 0.5s;
 }
-.logo-main:hover, .logo-main:active {
-  color: #0bceaf;
-}
 @media (max-width: 767.99px) {
-  .logo-main {
+  .logo-main:link, .logo-main:visited {
     font-size: 2.6rem;
   }
 }
 @media (max-width: 575.99px) {
-  .logo-main {
+  .logo-main:link, .logo-main:visited {
     font-size: 2rem;
   }
+}
+.logo-main:hover, .logo-main:active {
+  color: #0bceaf;
 }
 @media (max-width: 767.99px) {
   .logo {
@@ -165,25 +165,25 @@ p {
   transition: all 0.3s;
   cursor: pointer;
 }
-.nav-link:hover, .nav-link:active, .nav-link.active {
-  color: #0bceaf;
-}
 @media (max-width: 991.99px) {
-  .nav-link {
+  .nav-link:link, .nav-link:visited {
     font-weight: 700;
     font-size: 2.6rem;
   }
 }
 @media (max-width: 767.99px) {
-  .nav-link {
+  .nav-link:link, .nav-link:visited {
     font-weight: 600;
     font-size: 2.2rem;
   }
 }
 @media (max-width: 575.99px) {
-  .nav-link {
+  .nav-link:link, .nav-link:visited {
     font-size: 1.8rem;
   }
+}
+.nav-link:hover, .nav-link:active, .nav-link.active {
+  color: #0bceaf;
 }
 
 .nav-button-mobile {
