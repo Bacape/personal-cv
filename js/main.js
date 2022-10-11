@@ -3,18 +3,16 @@ const sections = document.querySelectorAll(".scroll-spy");
 const hero = document.querySelector(".hero");
 const header = document.querySelector(".header");
 const buttonmobile = document.querySelector(".nav-button-mobile");
-const allLinks = document.querySelectorAll("a:link");
 
 buttonmobile.addEventListener("click", function () {
   header.classList.toggle("nav-open");
 });
 
-allLinks.forEach(function (link) {
+navLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
     const href = link.getAttribute("href");
-    if (link.classList.contains("nav-link"))
-      header.classList.toggle("nav-open");
+    header.classList.toggle("nav-open");
   });
 });
 

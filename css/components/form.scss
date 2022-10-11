@@ -21,8 +21,8 @@
   & textarea::placeholder {
     color: $color-white;
   }
-  & textarea:focus,
-  & input:focus {
+  textarea:focus,
+  input:focus {
     outline: none;
   }
 }
