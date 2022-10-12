@@ -190,10 +190,10 @@ p {
   @include for-phone {
     width: 100%;
   }
-}
-.experiences-boxes:last-child {
-  @include for-tablet-portrait {
-    margin-top: 5rem;
+  &:last-child {
+    @include for-tablet-portrait {
+      margin-top: 5rem;
+    }
   }
 }
 .experiences-box {
