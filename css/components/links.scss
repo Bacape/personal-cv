@@ -33,19 +33,3 @@
     color: $color-mint;
   }
 }
-.contact-button:link,
-.contact-button:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2.2rem;
-  font-weight: 500;
-  background-color: $color-mint;
-  padding: 1.6rem;
-  border-radius: 2rem;
-  color: $color-white;
-  margin-top: 3rem;
-  @include for-desktop {
-    font-size: 2rem;
-    padding: 1.4rem;
-  }
-}

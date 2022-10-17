@@ -156,7 +156,10 @@
         <div class="contact-box">
           <ion-icon class="contact-icon" name="location-outline"></ion-icon>
           <p class="contact-title">Adresa</p>
-          <p class="contact-description"><span>Pod pramenem 1504/4</span><span></span><span> Praha 4 - Nusele</span></p>
+          <p class="contact-description">
+            <span>Pod pramenem 1504/4</span><span></span
+            ><span> Praha 4 - Nusele</span>
+          </p>
         </div>
         <div class="contact-box">
           <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
@@ -178,33 +181,23 @@
         </div>
       </div>
       <div class="contact-list container">
-        <form class="contact-form" action="#">
-            <input id="first-name" type="text" placeholder="Jméno" required />
-          <form class="contact-form" action="#">              
-            <input id="last-name" type="text" placeholder="Přijmení" required />
-            <input
-              id="email"
-              type="email"
-              placeholder="Váš email"
-              required
-            />
-            <textarea
-              name="contact-text"
-              id="contact-text"
-              cols="30"
-              rows="5"
-              placeholder="Vaše zpráva"
-              required
-            ></textarea>
-          
-            <a href="#" class="contact-button">Odeslat zprávu</a>
-          
-          </form>
-          
-        </div>
-        <p class="copyright">
-          Copyright &copy; 2027 by Petr Bačovský
-        </p>
+        <form class="contact-form" action="mail.php" method="post">
+          <input id="first-name" type="text" placeholder="Jméno" required />
+          <input id="last-name" type="text" placeholder="Přijmení" required />
+          <input id="email" type="email" placeholder="Váš email" required />
+          <textarea
+            name="contact-text"
+            id="contact-text"
+            cols="30"
+            rows="5"
+            placeholder="Vaše zpráva"
+            required
+          ></textarea>
+
+          <input type="submit" value="Odeslat zprávu" class="contact-button" />
+        </form>
+      </div>
+      <p class="copyright">Copyright &copy; 2027 by Petr Bačovský</p>
     </section>
     <script src="js/main.js"></script>
   </body>

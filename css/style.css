@@ -340,6 +340,27 @@ p {
   outline: none;
 }
 
+input.contact-button {
+  width: 40%;
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: #0bceaf;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+}
+@media (max-width: 1199.99px) {
+  input.contact-button {
+    width: 50%;
+  }
+}
+@media (max-width: 575.99px) {
+  input.contact-button {
+    font-size: 1.6rem;
+    width: 55%;
+  }
+}
+
 .hero-icon {
   width: 2rem;
   height: 2rem;
@@ -410,26 +431,6 @@ p {
 }
 .contact-link:active, .contact-link:hover {
   color: #0bceaf;
-}
-
-.contact-button:link,
-.contact-button:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2.2rem;
-  font-weight: 500;
-  background-color: #0bceaf;
-  padding: 1.6rem;
-  border-radius: 2rem;
-  color: #fff8dc;
-  margin-top: 3rem;
-}
-@media (max-width: 1199.99px) {
-  .contact-button:link,
-.contact-button:visited {
-    font-size: 2rem;
-    padding: 1.4rem;
-  }
 }
 
 .hero-hello {
@@ -779,7 +780,6 @@ p {
     width: 100%;
   }
 }
-
 @media (max-width: 767.99px) {
   .experiences-boxes:last-child {
     margin-top: 5rem;
