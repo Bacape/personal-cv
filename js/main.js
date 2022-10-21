@@ -11,7 +11,6 @@ buttonmobile.addEventListener("click", function () {
 navLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     e.preventDefault();
-    const href = link.getAttribute("href");
     header.classList.toggle("nav-open");
   });
 });

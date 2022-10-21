@@ -197,18 +197,17 @@ p {
   }
 }
 .experiences-box {
-  & {
-    padding: 4rem;
-    margin-top: 6rem;
-    background-color: $color-side;
-    box-shadow: -1rem 0 3rem #000;
-    transform: translateY(20rem);
-    opacity: 0;
-    transition: 500ms;
-    @include for-tablet-landscape {
-      margin-top: 3rem;
-    }
+  padding: 4rem;
+  margin-top: 6rem;
+  background-color: $color-side;
+  box-shadow: -1rem 0 3rem #000;
+  transform: translateY(20rem);
+  opacity: 0;
+  transition: 500ms;
+  @include for-tablet-landscape {
+    margin-top: 3rem;
   }
+
   &.show {
     transform: translateY(0);
     opacity: 1;
