@@ -190,6 +190,7 @@ p {
   @include for-phone {
     width: 100%;
   }
+
   &:last-child {
     @include for-tablet-portrait {
       margin-top: 5rem;
