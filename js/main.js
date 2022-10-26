@@ -35,16 +35,14 @@ window.onscroll = () => {
     document.documentElement.scrollTop || document.body.scrollTop;
   const headerHeight = header.clientHeight;
 
-  sections.forEach((v, i) => {
+  sections.forEach((v, d) => {
     const elementOffset = v.offsetTop;
 
     // is scrolled more than element from top
     if (currentScroll >= elementOffset - headerHeight) {
       // remove all current active classes
       navLinks.forEach((v) => v.classList.remove("active"));
-      document
-        .querySelector(`a[href*=${sections[i].id}]`)
-        .classList.add("active");
+      document.querySelector(`a href=${id}]`).classList.add("active");
     }
     return;
   });

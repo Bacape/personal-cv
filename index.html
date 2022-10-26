@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="css/style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -18,29 +19,30 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
-    <link rel="stylesheet" href="css/queries.css" />
     <title>Bačovský Petr</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-mid">
-        <a class="logo-main" href="#hero">
-          <span class="logo">Petr Bačovský</span>
-        </a>
-        <nav class="navigation">
-          <ul class="nav-list--main">
-            <li><a class="nav-link" href="#o-mne">O mně</a></li>
-            <li>
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li><a class="nav-link" href="#zkusenosti">Praxe</a></li>
-            <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
-          </ul>
-        </nav>
-        <button class="nav-button-mobile">
-          <ion-icon class="nav-mobile-icon" name="menu-outline"></ion-icon>
-          <ion-icon class="nav-mobile-icon" name="close-outline"></ion-icon>
-        </button>
+      <div class="container">
+        <div class="header-mid">
+          <a class="logo-main" href="#hero">
+            <span class="logo">Petr Bačovský</span>
+          </a>
+          <nav class="navigation">
+            <ul class="nav-list--main">
+              <li><a class="nav-link" href="#o-mne">O mně</a></li>
+              <li>
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li><a class="nav-link" href="#zkusenosti">Praxe</a></li>
+              <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
+          <button class="nav-button-mobile">
+            <ion-icon class="nav-mobile-icon" name="menu-outline"></ion-icon>
+            <ion-icon class="nav-mobile-icon" name="close-outline"></ion-icon>
+          </button>
+        </div>
       </div>
     </header>
     <section class="hero container" id="hero">
@@ -180,9 +182,27 @@
       </div>
       <div class="contact-list container">
         <form class="contact-form" action="mail.php" method="post">
-          <input id="first-name" type="text" placeholder="Jméno" required />
-          <input id="last-name" type="text" placeholder="Přijmení" required />
-          <input id="email" type="email" placeholder="Váš email" required />
+          <input
+            name="first-name"
+            id="first-name"
+            type="text"
+            placeholder="Jméno"
+            required
+          />
+          <input
+            name="last-name"
+            id="last-name"
+            type="text"
+            placeholder="Přijmení"
+            required
+          />
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Váš email"
+            required
+          />
           <textarea
             name="contact-text"
             id="contact-text"

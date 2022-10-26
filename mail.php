@@ -5,7 +5,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the form fields and remove whitespace.
     $fname = strip_tags(trim($_POST["first-name"]));
     $lname = strip_tags(trim($_POST["last-name"]));
-    $name = str_replace(array("\r","\n"),array(" "," "),$name);
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $message = trim($_POST["contact-text"]);
 
