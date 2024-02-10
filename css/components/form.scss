@@ -21,4 +21,24 @@
   & textarea::placeholder {
     color: $color-white;
   }
+  textarea:focus,
+  input:focus {
+    outline: none;
+  }
+}
+input.contact-button {
+  width: 40%;
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: $color-mint;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: none;
+  @include for-desktop {
+    width: 50%;
+  }
+  @include for-phone {
+    font-size: 1.6rem;
+    width: 55%;
+  }
 }

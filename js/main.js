@@ -2,6 +2,18 @@ const navLinks = document.querySelectorAll(".nav-link");
 const sections = document.querySelectorAll(".scroll-spy");
 const hero = document.querySelector(".hero");
 const header = document.querySelector(".header");
+const buttonmobile = document.querySelector(".nav-button-mobile");
+
+buttonmobile.addEventListener("click", function () {
+  header.classList.toggle("nav-open");
+});
+
+navLinks.forEach(function (link) {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    header.classList.toggle("nav-open");
+  });
+});
 
 function scrollTo(element) {
   window.scroll({
@@ -23,16 +35,14 @@ window.onscroll = () => {
     document.documentElement.scrollTop || document.body.scrollTop;
   const headerHeight = header.clientHeight;
 
-  sections.forEach((v, i) => {
+  sections.forEach((v, d) => {
     const elementOffset = v.offsetTop;
 
     // is scrolled more than element from top
     if (currentScroll >= elementOffset - headerHeight) {
       // remove all current active classes
       navLinks.forEach((v) => v.classList.remove("active"));
-      document
-        .querySelector(`a[href*=${sections[i].id}]`)
-        .classList.add("active");
+      document.querySelector(`a href=${id}]`).classList.add("active");
     }
     return;
   });
@@ -49,9 +59,29 @@ text = "Bačovský Petr";
 
 function typing() {
   if (i < text.length) {
-    document.getElementById("hero-tittle").innerHTML += text.charAt(i);
+    document.getElementById("hero-title").innerHTML += text.charAt(i);
     i++;
     setTimeout(typing, 250);
   }
 }
 typing();
+
+const cards = document.querySelectorAll(".contact-box");
+const boxes = document.querySelectorAll(".experiences-box");
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("show", entry.isIntersecting);
+      if (entry.isIntersecting) observer.unobserve(entry.target);
+    });
+  },
+  {
+    threshold: 0.25,
+  }
+);
+boxes.forEach((box) => {
+  observer.observe(box);
+});
+cards.forEach((card) => {
+  observer.observe(card);
+});

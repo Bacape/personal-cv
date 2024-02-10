@@ -1,0 +1,92 @@
+.hero-hello {
+  background-color: $color-mint;
+  display: inline-block;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  padding: 1rem 3rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  @include for-desktop {
+    font-size: 1.2rem;
+    padding: 0.8rem 2.6rem;
+  }
+  @include for-phone {
+    padding: 0.2rem 1.8rem;
+  }
+}
+.hero-address {
+  font-size: 1.8rem;
+  @include for-desktop {
+    font-size: 1.6rem;
+  }
+  @include for-phone {
+    font-size: 1.4rem;
+  }
+}
+.about-description {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  @include for-desktop {
+    font-size: 1.6rem;
+  }
+  @include for-tablet-landscape {
+    font-size: 1.4rem;
+  }
+  @include for-tablet-portrait {
+    font-size: 1.7rem;
+  }
+}
+.experiences-description {
+  font-size: 2rem;
+  margin-top: 1rem;
+  @include for-desktop {
+    font-size: 1.8rem;
+  }
+}
+.experiences-work {
+  font-size: 2.2rem;
+  color: $color-mint;
+  @include for-desktop {
+    font-size: 2rem;
+  }
+}
+.experiences-year {
+  font-size: 1.8rem;
+  color: $color-mint;
+  margin-top: 2rem;
+  @include for-desktop {
+    font-size: 2rem;
+  }
+}
+.contact-title {
+  font-size: 2.6rem;
+  margin-top: 4rem;
+  @include for-desktop {
+    font-size: 2.4rem;
+  }
+  @include for-phone {
+    font-size: 2.2rem;
+  }
+}
+.contact-description {
+  font-size: 2rem;
+  @include for-desktop {
+    font-size: 1.8rem;
+  }
+  @include for-phone {
+    font-size: 1.6rem;
+  }
+}
+.copyright {
+  text-align: center;
+  font-size: 1.6rem;
+  color: $color-white;
+  margin: 8rem auto 6rem auto;
+  @include for-phone {
+    font-size: 1.2rem;
+    margin-bottom: 4rem;
+  }
+}

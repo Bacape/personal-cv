@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="css/style.css" />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -18,39 +19,42 @@
       nomodule=""
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
-    <link rel="stylesheet" href="css/queries.css" />
     <title>Bačovský Petr</title>
   </head>
   <body>
     <header class="header">
-      <div class="header-mid">
-        <a class="logo-main" href="#hero">
-          <span class="logo">Petr Bačovský</span>
-        </a>
-        <nav class="navigation">
-          <ul class="nav-list--main">
-            <li><a class="nav-link" href="#o-mne">O Mně</a></li>
-            <li>
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li><a class="nav-link" href="#zkusenosti">Zkušenosti</a></li>
-            <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
-          </ul>
-        </nav>
+      <div class="container">
+        <div class="header-mid">
+          <a class="logo-main" href="#hero">
+            <span class="logo">Petr Bačovský</span>
+          </a>
+          <nav class="navigation">
+            <ul class="nav-list--main">
+              <li><a class="nav-link" href="#o-mne">O mně</a></li>
+              <li>
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li><a class="nav-link" href="#zkusenosti">Praxe</a></li>
+              <li><a class="nav-link" href="#kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
+          <button class="nav-button-mobile">
+            <ion-icon class="nav-mobile-icon" name="menu-outline"></ion-icon>
+            <ion-icon class="nav-mobile-icon" name="close-outline"></ion-icon>
+          </button>
+        </div>
       </div>
     </header>
     <section class="hero container" id="hero">
       <div class="hero-text">
         <div class="hero-hello">Já jsem</div>
-        <div id="hero-tittle"></div>
+        <div id="hero-title"></div>
         <h3 class="heading-tertiary">Front-end developer</h3>
         <ul class="hero-list">
           <li class="hero-list-item">
             <ion-icon class="hero-icon" name="call-outline"></ion-icon>
             <p>
-              <a class="hero-link" href="tel:+420 722 047 140"
-                >+420 722 047 140</a
-              >
+              <a class="hero-link" href="tel:+420722047140">+420 722 047 140</a>
             </p>
           </li>
           <li class="hero-list-item">
@@ -84,7 +88,7 @@
         </p>
       </div>
     </section>
-    <sectio class="scroll-spy section-skills container" id="skills">
+    <section class="scroll-spy section-skills container" id="skills">
       <div class="skills-box">
         <h2 class="heading-secondary">Technický skill</h2>
         <div class="skills">
@@ -104,7 +108,7 @@
           <span class="badge">Kreativita</span>
         </div>
       </div>
-    </sectio>
+    </section>
     <section class="scroll-spy section-experiences container" id="zkusenosti">
       <div class="experiences-boxes">
         <h2 class="heading-secondary">Vzdělání</h2>
@@ -122,27 +126,27 @@
           <h4 class="heading-fourth">
             Malíř <span class="experiences-work"> Petr Bačovský</span>
           </h4>
-          <p class="experiences-year">09/2019 - současnost</p>
+          <p class="experiences-year">9/2019 - současnost</p>
         </div>
         <div class="experiences-box">
           <h4 class="heading-fourth">
             Bartender
             <span class="experiences-work"> The Jackalope (London) </span>
           </h4>
-          <p class="experiences-year">06/2019 - 09/2019</p>
+          <p class="experiences-year">6/2019 - 9/2019</p>
         </div>
         <div class="experiences-box">
           <h4 class="heading-fourth">
             Kurýr <span class="experiences-work"> Dáme jídlo s.r.o.</span>
           </h4>
-          <p class="experiences-year">9/2018 - 06/2019</p>
+          <p class="experiences-year">9/2018 - 6/2019</p>
         </div>
         <div class="experiences-box">
           <h4 class="heading-fourth">
             Skladník
             <span class="experiences-work">JANČA & EMAS goup s.r.o.</span>
           </h4>
-          <p class="experiences-year">04/2016 - 03/2017</p>
+          <p class="experiences-year">4/2016 - 3/2017</p>
         </div>
       </div>
     </section>
@@ -151,12 +155,15 @@
       <div class="contact-boxes container">
         <div class="contact-box">
           <ion-icon class="contact-icon" name="location-outline"></ion-icon>
-          <p class="contact-tittle">Adresa</p>
-          <p class="contact-description"><span>Pod pramenem 1504/4</span> Praha 4 - Nusele</p>
+          <p class="contact-title">Adresa</p>
+          <p class="contact-description">
+            <span>Pod pramenem 1504/4</span><span></span
+            ><span> Praha 4 - Nusele</span>
+          </p>
         </div>
         <div class="contact-box">
           <ion-icon class="contact-icon" name="mail-outline"></ion-icon>
-          <p class="contact-tittle">Email</p>
+          <p class="contact-title">Email</p>
           <p>
             <a class="contact-link" href="mailto:petrbacov@gmail.com"
               >petrbacov@gmail.com</a
@@ -165,42 +172,50 @@
         </div>
         <div class="contact-box">
           <ion-icon class="contact-icon" name="call-outline"></ion-icon>
-          <p class="contact-tittle">Telefon</p>
+          <p class="contact-title">Telefon</p>
           <p>
-            <a class="contact-link" href="tel:+420 722 047 140"
+            <a class="contact-link" href="tel:+420722047140"
               >+420 722 047 140</a
             >
           </p>
         </div>
       </div>
-      <div class="contact-list">
-        <form class="contact-form" action="#">
-            <input id="first-name" type="text" placeholder="Jméno" required />
-          <form class="contact-form" action="#">              
-            <input id="last-name" type="text" placeholder="Přijmení" required />
-            <input
-              id="email"
-              type="email"
-              placeholder="Váš email"
-              required
-            />
-            <textarea
-              name="contact-text"
-              id="contact-text"
-              cols="30"
-              rows="5"
-              placeholder="Vaše zpráva"
-              required
-            ></textarea>
-          
-            <a href="#" class="contact-button">Odeslat zprávu</a>
-          
-          </form>
-          
-        </div>
-        <p class="copyright">
-          Copyright &copy; 2027 by Petr Bačovský
-        </p>
+      <div class="contact-list container">
+        <form class="contact-form" action="mail.php" method="post">
+          <input
+            name="first-name"
+            id="first-name"
+            type="text"
+            placeholder="Jméno"
+            required
+          />
+          <input
+            name="last-name"
+            id="last-name"
+            type="text"
+            placeholder="Přijmení"
+            required
+          />
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Váš email"
+            required
+          />
+          <textarea
+            name="contact-text"
+            id="contact-text"
+            cols="30"
+            rows="5"
+            placeholder="Vaše zpráva"
+            required
+          ></textarea>
+
+          <input type="submit" value="Odeslat zprávu" class="contact-button" />
+        </form>
+      </div>
+      <p class="copyright">Copyright &copy; 2022 by Petr Bačovský</p>
     </section>
     <script src="js/main.js"></script>
   </body>

@@ -1,7 +1,4 @@
-.badge{
-
-
-& {
+.badge {
   display: inline-block;
   padding: 1.6rem 1.6rem;
   font-weight: 500;
@@ -9,9 +6,14 @@
   color: $color-white;
   border-radius: 2rem;
   border: 0.5rem solid $color-mint;
+  @include for-desktop {
+    font-size: 1.6rem;
+  }
+  @include for-tablet-landscape {
+    border: 0.3rem solid #0bceaf;
+  }
 }
-&:hover {
+.badge:hover {
   background-color: #0bceaf;
   color: #ffff;
-}
 }
